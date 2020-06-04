@@ -1,0 +1,35 @@
+Cruise Name: Amundsen 2019
+Cruise ID: AN-2019
+Ship: Amundsen
+Operator Name: Manning / Izett
+Optode Serial No.: 4330-2941 (#4)
+TDGP (mini) Serial No.: 37-465-31 (#2)
+Pump Type: Magnetic Drive
+Instrument Location: Main Lab
+Loop Calibration Samples Obtained?: YES
+Time offset from TSG: 0 Hr, 3 Min, 18 Sec Behind
+Data headers:
+Computer JD
+O2%
+O2 uM
+Opt. temp
+mini mbar
+mini temp
+Flow rate [l/min]
+GPS JD
+GPS Lat
+GPS Long
+Opt raw CalPhase
+Opt raw TC Phase
+Opt raw C1RPh
+Opt raw C2RPh
+Opt raw C1 amp
+Opt raw C2 amp
+Opt raw Raw temp
+mini raw supply voltage
+mini raw Analog in 1
+mini raw Analog in 2
+mini raw Digital in 1
+mini raw Digital in 2
+Pump status (on/off)
+Primary flow rate [L/min]
