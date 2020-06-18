@@ -1,3 +1,5 @@
 This folder contains the scripts and functions to read and process PIGI data obtained from LabVIEW acquisitions. 
 
-Run "pigi_processing.m" to peform the processing.
+Run "process_pigi_MAIN.m" to peform the processing.
+
+Note that additional hydrographic data (temperature and salinity), and atmospheric sea level pressure are required to perform post-processing calculations. 
