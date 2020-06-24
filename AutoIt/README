@@ -1,8 +1,5 @@
 This folder contains an AutoIt (https://www.autoitscript.com/site/autoit-tools/) script to automatically re-start PIGI LabVIEW acquisitions. 
 
-NOTE: the script will need to be edited to match the user's system:
-1) Open XXXXXX.
-2) Change the directory location (LINE XXXX).
-3) Save and exit.
-4) Re-compile: Right click --> compile 64bit
-5) Rename compiled file as XXXX_compiled
+The script can be edited by opening the .au3 file. After making edits, the file MUST be re-compiled into an executable (.exe) file (Right click --> compile --> rename the compiled file as run_acquisition_compiled.exe).
+
+The .exe file must be referenced in the PIGI_automation_restart LabVIEW program.
