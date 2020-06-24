@@ -1,0 +1,1 @@
+This folder contains a Matlab toolbox to process PIGI data acquired in the LabVIEW acquisition. Example input (.lvm / LabVIEW data) and output / processed data files (.mat) and figures. 
