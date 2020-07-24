@@ -1,7 +1,7 @@
 # PIGI_system
 This repository contains Matlab, LabVIEW and AutoIt software scripts to acquire and process data from the PIGI system (Izett & Tortell, 2020). Technical and CAD drawings are also provided.
 
-The LabVIEW files contain scripts to acquire, display and record underway deployment data.
+The LabVIEW files contain scripts to acquire, display and record underway deployment data. LabVIEW files were written using version 2019, SP1. The base, full and professional programs (require license) can be downloaded here: https://www.ni.com/en-ca/support/downloads/software-products/download.labview.html#329059, and the 2019 runtime engine can be downloaded from https://www.ni.com/en-ca/support/downloads/software-products/download.labview.html#346878. 
 
 The AutoIt files contain scripts to automatically re-activate underway data acquisitions. AutoIt can be downoloaded freely here: https://www.autoitscript.com/site/autoit-tools/
 
