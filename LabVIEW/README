@@ -1,3 +1,7 @@
-This folder contains a LabVIEW package to run the PIGI system.
+This folder contains LabVIEW package to run the PIGI system.
 
-Files were created using LabVIEW version 2019, SP1. They can be modified by downloading and purchasing a license for the base, full and professional programs, or can be run on the FREE, stand-alone run-time engine. 
+If you have an active license to the LabVIEW Base, Full or Professional development programs (https://www.ni.com/en-ca/shop/labview/select-edition.html), download and run the files contained in the PIGI_Library_2020.llb library folder. These files can be modified using the LabVIEW development programs.
+
+If you do not have an active license, you can run our software using the FREE LabVIEW run-time engine. Download the PIGI_labview installer, and run the autoPIGI_underway_2020.exe excecutable.
+
+The LabVIEW development program and run-time engine can be downloaded here: https://www.ni.com/en-ca/support/downloads/software-products/download.labview.html#346878. Files were created using LabVIEW version 2019, SP1. T
