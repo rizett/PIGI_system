@@ -11,4 +11,4 @@ The technical diagrams contain specifications for machining components of the PI
 
 
 References:
-Izett, R. & Tortell, P. 2020. The Pressure of in-situ Gases Instrument (PIGI) for autonomous ship-board measurement of dissolved O2 and N2 in surface ocean waters. Oceanography. 33(2). DOI#.
+Izett, R. & Tortell, P. 2020. The Pressure of in-situ Gases Instrument (PIGI) for autonomous ship-board measurement of dissolved O2 and N2 in surface ocean waters. Oceanography. 33(2).https://doi.org/10.5670/oceanog.2020.214.
