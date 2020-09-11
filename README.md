@@ -1,5 +1,5 @@
 # PIGI_system
-This repository contains Matlab, LabVIEW and AutoIt software scripts to acquire and process data from the PIGI system (Izett & Tortell, 2020; Oceanography). Technical and CAD drawings are also provided.
+This repository (doi. 10.5281/zenodo.4024952) contains Matlab, LabVIEW and AutoIt software scripts to acquire and process data from the PIGI system (Izett & Tortell, 2020; Oceanography). Technical and CAD drawings are also provided.
 
 The LabVIEW files contain scripts to acquire, display and record underway deployment data. LabVIEW files were written using version 2019, SP1. The base, full and professional development programs (require license) can be downloaded here: https://www.ni.com/en-ca/support/downloads/software-products/download.labview.html#329059. The provided installer contains the 2019 runtime engine, or it can be downloaded separately from https://www.ni.com/en-ca/support/downloads/software-products/download.labview.html#346878. 
 
