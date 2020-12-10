@@ -10,9 +10,9 @@ end
 set(ax,'xgrid','on','ygrid','on','box','on','layer','top','xminortick','on','yminortick','on')
 
 %Set x,y labels to bold.
-xlab = get(gca,'xlabel');
+xlab = get(ax,'xlabel');
     xlab.FontWeight = 'bold';
-ylab = get(gca,'ylabel');
+ylab = get(ax,'ylabel');
     ylab.FontWeight = 'bold';
     
 return
