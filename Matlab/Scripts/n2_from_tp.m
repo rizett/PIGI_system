@@ -59,16 +59,20 @@ function [dat,p,air] = n2_from_tp(tp,o2,ar,pco2,T,S,air)
         
         %CO2, ppm
         if isempty(pco2)
-            p.co2 = repmat(0,size(p.o2));
+            p.co2 = repmat(400,size(p.o2));
         else
-            p.co2 = pco2 .* 1e-6 .* (air.slp-air.ph2o);
+            p.co2 = pco2 .* 1e-6 .* (air.slp-air.ph2o); %convert uatm to mbar
         end
         
         %Vapour pressure in seawater
         p.h2o = vpress(S,T).*1013.25; %Weiss & Price 1980 saturation vapour pressure         
 
     %--- Calculate pN2
-        p.n2 = (tp - p.o2 - p.h2o - p.ar - p.co2) / (1 + ((1 - air.x_n2 - air.x_o2 - air.x_ar)/air.x_n2));
+        if isempty(ar)
+            p.n2 = (tp - p.o2 - p.h2o - p.co2) / (1 + ((1 - air.x_n2 - air.x_o2)/air.x_n2));
+        else
+            p.n2 = (tp - p.o2 - p.h2o - p.ar - p.co2) / (1 + ((1 - air.x_n2 - air.x_o2 - air.x_ar)/air.x_n2));
+        end
                 
     %--- N2 saturation level [%]
         dat.n2sat = p.n2 ./ (air.x_n2 .* (air.slp - air.ph2o)); 
