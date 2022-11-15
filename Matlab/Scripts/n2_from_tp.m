@@ -7,7 +7,7 @@ function [dat,p,air] = n2_from_tp(tp,o2,ar,pco2,T,S,air)
 %     tp = total dissolved gas pressure (temperature and bias corrected); mbar
 %     o2 = calibrate O2 saturation; %/100
 %     ar = Argon saturation; %/100 (leave empty, [], if not available)
-%     pco2 = Partial pressure of CO2; ppm (leave empty, [], if not available)
+%     pco2 = Partial pressure of CO2; uatm (leave empty, [], if not available)
 %     T = SST; C
 %     S = salinity; PSU
 %     air = data structure containing:
@@ -29,7 +29,7 @@ function [dat,p,air] = n2_from_tp(tp,o2,ar,pco2,T,S,air)
 %        air.ph2o = vapour pressure; mbar
 %        air.x_o2 = atmospheric O2 mixing ratio
 %        air.x_ar = atmospheric Ar mixing ratio
-%        air.x_n2 = atmospheric N2 mixing ratio
+%        air.x_n2 = atmospheric N2 mixing ratio 
 %
 % Last updated: June 2020
 % R. Izett, rizett@eoas.ubc.ca
@@ -55,9 +55,10 @@ function [dat,p,air] = n2_from_tp(tp,o2,ar,pco2,T,S,air)
             p.ar = ar .* air.x_ar .* (air.slp - air.ph2o); 
         end
         
-        %CO2, ppm
+        %CO2, mbar
         if isempty(pco2)
-            p.co2 = repmat(400,size(p.o2))*1e-6;
+            pco2_nominal = 400; %uatm; note: you may consider replacing 400 uatm with a value more representative of your region, e.g., using the SOCAT Atlas.
+            p.co2 = repmat(pco2_nominal,size(p.o2)) .*1e-6 .* (air.slp-air.ph2o); %convert uatm to mbar
         else
             p.co2 = pco2 .* 1e-6 .* (air.slp-air.ph2o); %convert uatm to mbar
         end
