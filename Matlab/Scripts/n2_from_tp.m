@@ -51,15 +51,13 @@ function [dat,p,air] = n2_from_tp(tp,o2,ar,pco2,T,S,air)
         p.o2 = O2stoO2p(o2.*100,T,S,0,air.slp);
 
         %Argon
-        if isempty(ar)
-            p.ar = repmat(0,size(p.o2));
-        else
+        if ~isempty(ar)
             p.ar = ar .* air.x_ar .* (air.slp - air.ph2o); 
         end
         
         %CO2, ppm
         if isempty(pco2)
-            p.co2 = repmat(400,size(p.o2));
+            p.co2 = repmat(400,size(p.o2))*1e-6;
         else
             p.co2 = pco2 .* 1e-6 .* (air.slp-air.ph2o); %convert uatm to mbar
         end
